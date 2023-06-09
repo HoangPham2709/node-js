@@ -19,7 +19,7 @@ export const get = async (req, res) => {
     try {
         const product = await products.findById(req.params.id);
         return res.status(201).json({
-            message: "tim kiem thanh cong",
+            message: "tim kiem thanh cong san pham",
             product,
         })
     } catch (error) {
