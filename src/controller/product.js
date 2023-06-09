@@ -32,7 +32,7 @@ export const getAll = async (req, res) => {
     try {
         const product = await products.find();
         return res.status(201).json({
-            message: "tim kiem thanh cong",
+            message: "tim kiem thanh cong toan bo san pham",
             product,
         })
     } catch (error) {
